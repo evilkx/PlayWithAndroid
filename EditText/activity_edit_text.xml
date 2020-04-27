@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="个人健康中心"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/ll_1"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_btn3"
+        android:drawableLeft="@drawable/login_username"
+        android:drawablePadding="5dp"
+        android:hint="Username"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:nextFocusDown="@id/et_2"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:singleLine="true"
+        android:textColor="#FFAD33"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_btn3"
+        android:drawableLeft="@drawable/login_passwd"
+        android:drawablePadding="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textColor="#FFAD33"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_2"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_btn2"
+        android:gravity="center"
+        android:text="Login" />
+</RelativeLayout>
